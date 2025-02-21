@@ -21,19 +21,20 @@
                 </div>
             </div>
         </div>
-
-        <div class="header2">
+    
+        <div class="header2" id="header2">
             <a href="./index.html"><img src="./IMGS/logo_jm.png" alt="Logo"></a>
-            <ul>
-                <a href="">
-                    <li>Inicio</li>
-                </a>
-                <a href="./serviços.html">
-                    <li>Serviços</li>
-                </a>
+    
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <label for="menu-toggle" class="overlay"></label>
+    
+            <ul class="nav-menu">
+                <a href="./index.html"><li>Início</li></a>
+                <a href="./serviços.html"><li>Serviços</li></a>
             </ul>
         </div>
-    </header>
+    </header>    
 
     <main>
         <div class="carousel">
@@ -137,21 +138,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="jm_descricao3">
+            <div class="la_p">
+                <a href="./serviços.html">
+                    <div class="la2">MARCAS QUE UTILIZAMOS</div>
+                </a>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="footer">
-            <a class="principal_img" href="./index.html"><img src="./IMGS/logo_jm.png" alt="Jm Informática"></a>
+            <!-- <div class="img_footer">
+                <a class="principal_img" href="./index.html"><img src="./IMGS/logo_jm.png" alt="Jm Informática"></a>
+            </div> -->
 
             <div class="all">
                 <div>
                     <h1>Contato</h1>
-                    <div class="wpp">
-                        <img src="./IMGS/wpp.png" alt="WhatsApp">
-                        <a href="http://wa.me/5511940318619" target="_blank">
+                    <a href="http://wa.me/5511940318619" target="_blank">
+                        <div class="wpp">
+                            <img src="./IMGS/wpp.png" alt="WhatsApp">
+
                             <p>Whatsapp</p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- <div>
                 <h1>Outros</h1>

@@ -3,7 +3,7 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 1700px;
+    height: 2300px;
     /* background-color: rgb(194, 192, 192); */
 }
 
@@ -12,7 +12,7 @@ header {
     height: 90px;
 
     .pai_header1 {
-        border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
 
         .header1 {
             display: flex;
@@ -54,8 +54,32 @@ header {
         align-items: center;
         width: 100%;
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.01);
+        background-color: rgba(255, 255, 255);
         z-index: 1000;
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
         img {
             width: 48px;
@@ -202,6 +226,7 @@ main {
         gap: 2rem;
         width: 100%;
         height: 1000px;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
 
         .la_p {
             display: flex;
@@ -328,12 +353,44 @@ main {
         }
     }
 
+    .jm_descricao3 {
+        width: 100%;
+        height: 600px;
+
+        .la_p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+
+            .la2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+                height: 25px;
+                background-color: #2A83ED;
+                border-radius: 5px;
+                color: white;
+                font-size: 14px;
+                transition: all 0.3s;
+            }
+
+            .la2:hover {
+                background-color: #194275;
+                box-shadow: 0 0 5px black;
+            }
+        }
+    }
+
     a {
         text-decoration: none;
     }
 }
 
 footer {
+    user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,13 +405,15 @@ footer {
         height: 50%;
         gap: 2rem;
 
-        img {
-            width: 35px;
-        }
+        .img_footer {
+            img {
+                width: 35px;
+            }
 
-        img:hover {
-            transform: scale(1.1);
-            filter: drop-shadow(0 0 10px #2877D8);
+            img:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(0 0 10px #2877D8);
+            }
         }
 
         .all {
@@ -385,11 +444,11 @@ footer {
                     width: 120px;
                     height: 25px;
                     transition: all 0.5s;
+                    cursor: pointer;
 
-                    /* img:hover {
-                        transform: scale(1.1);
-                        filter: drop-shadow(0 0 0);
-                    } */
+                    img {
+                        width: 35px;
+                    }
 
                     p {
                         margin: 0;
@@ -398,11 +457,15 @@ footer {
                         font-size: 14px;
                         transition: all 0.3s;
                     }
+
+                    p:hover {
+                        color: black;
+                    }
                 }
+
                 .wpp:hover {
                     transform: scale(1.1);
                     border: solid 2px black;
-                    color: black;
                 }
             }
         }
@@ -473,36 +536,58 @@ footer {
         }
 
         .header2 {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+            position: absolute;
+            background-color: 0;
+            text-align: center;
+            height: 50px;
             border-radius: 10px;
 
-            img {
-                width: 35px;
-                cursor: pointer;
-            }
-
-            ul {
+            .menu-icon {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 1rem;
+                z-index: 10;
+                color: black;
+                background-color: #2877D8;
+                width: 50px;
+                height: 40px;
+                border-radius: 10px;
+                transition: all 0.3s;
+            }
 
-                li {
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 60px;
-                    font-size: 12px;
-                    height: 25px;
-                    border-radius: 10px;
-                    border: 0;
-                }
+            .menu-icon:active {
+                color: white;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                flex-direction: column;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(0, 0, 0, 0.4);
+                width: 200px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                text-align: center;
+            }
+
+            #menu-toggle:checked~.nav-menu {
+                display: flex;
+            }
+
+            #menu-toggle:checked~.overlay {
+                display: block;
+            }
+
+            /* Impede o scroll lento ao abrir o menu */
+            #menu-toggle:checked~body {
+                overflow: auto;
+            }
+
+            img {
+                display: none;
             }
         }
     }
@@ -601,7 +686,7 @@ footer {
             flex-direction: column;
             gap: 2rem;
             width: 100%;
-            height: 2000px;
+            height: 1900px;
 
             .la_p {
                 display: flex;
@@ -695,6 +780,32 @@ footer {
                     }
                 }
 
+            }
+        }
+
+        .jm_descricao3 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            height: 900px;
+
+            .la_p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 100%;
+
+                .la2 {
+                    width: 100%;
+                    height: 25px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                    padding: 5px;
+                    transition: all 0.3s;
+                }
             }
         }
     }
