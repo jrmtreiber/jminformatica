@@ -45,4 +45,3 @@ function stickyHeader() {
         header2.style.top = "auto";
     }
 }
-
