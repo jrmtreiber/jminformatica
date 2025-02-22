@@ -588,19 +588,19 @@ footer {
                     align-items: center;
                     flex-direction: column;
 
-                h1 {
-                    color: #2A83ED;
-                    text-align: center;
-                    font-size: 18px;
-                }
+                    h1 {
+                        color: #2A83ED;
+                        text-align: center;
+                        font-size: 18px;
+                    }
 
-                p {
-                    color: white;
-                    text-align: center;
-                    font-size: 14px;
-                    max-width: 90%
+                    p {
+                        color: white;
+                        text-align: center;
+                        font-size: 14px;
+                        max-width: 90%;
+                    }
                 }
-            }
             }
         }
     }
