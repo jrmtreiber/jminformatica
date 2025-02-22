@@ -106,7 +106,7 @@ header {
                 color: white;
                 transition: all 0.5s;
                 background-color: #2877D8;
-                width: 80px;
+                width: 110px;
                 height: 25px;
                 border-radius: 5px;
                 border: 0;
@@ -129,6 +129,58 @@ header {
 main {
     width: 100%;
     height: 100%;
+
+    .orcamento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .la_p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+
+            .la2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 25px;
+                background-color: #2A83ED;
+                border-radius: 5px;
+                color: white;
+                font-size: 14px;
+                transition: all 0.3s;
+            }
+
+            .la2:hover {
+                background-color: #194275;
+                box-shadow: 0 0 5px black;
+            }
+        }
+
+        .quad_p-o {
+            width: 30%;
+            height: 500px;
+            background-color: black;
+            border: solid 1px black;
+            border-radius: 10px;
+
+            .quad_p {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+
+                input {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
 
 /*  */
@@ -242,7 +294,7 @@ footer {
 @media (max-width: 860px) {
     body {
         min-width: 100vw;
-        height: 2100px;
+        height: 700px;
     }
 
     header {
@@ -331,7 +383,51 @@ footer {
 
     /*  */
 
-    
+    main {
+        width: 100%;
+        height: 100%;
+
+        .orcamento {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .la_p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 100%;
+
+                .la2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 25px;
+                    background-color: #2A83ED;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 14px;
+                    transition: all 0.3s;
+                }
+
+                .la2:hover {
+                    background-color: #194275;
+                    box-shadow: 0 0 5px black;
+                }
+            }
+
+            .quad_p-o {
+                width: 90%;
+                height: 500px;
+                background-color: black;
+                border: solid 1px black;
+                border-radius: 10px;
+            }
+        }
+    }
 
     /*  */
 
