@@ -384,7 +384,7 @@ footer {
 @media (max-width: 860px) {
     body {
         min-width: 100vw;
-        height: 1350px;
+        height: 1400px;
     }
 
     header {
@@ -537,16 +537,24 @@ footer {
                     box-shadow: 0 0 10px yellow;
                 }
 
-                h1 {
-                    color: yellow;
-                    text-align: center;
-                    font-size: 16px;
-                }
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
 
-                p {
-                    color: white;
-                    text-align: center;
-                    font-size: 14px;
+                    h1 {
+                        color: yellow;
+                        text-align: center;
+                        font-size: 18px;
+                    }
+
+                    p {
+                        color: white;
+                        text-align: center;
+                        font-size: 14px;
+                        max-width: 90%
+                    }
                 }
             }
 
@@ -574,17 +582,25 @@ footer {
                     box-shadow: 0 0 10px #2A83ED;
                 }
 
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
                 h1 {
                     color: #2A83ED;
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
 
                 p {
                     color: white;
                     text-align: center;
                     font-size: 14px;
+                    max-width: 90%
                 }
+            }
             }
         }
     }
