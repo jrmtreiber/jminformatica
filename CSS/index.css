@@ -293,7 +293,7 @@ main {
         align-items: center;
         flex-direction: column;
         gap: 2rem;
-        background-image: url("/IMGS/fundo_jrm_desc2.png");
+        background-image: url("./IMGS/fundo_jrm_desc2.png");
         background-size: 50% 100%;
         box-shadow: 0 0 80px #2877D8;
         width: 100%;
@@ -927,7 +927,7 @@ footer {
                 width: 100%;
 
                 .la2 {
-                    width: 120px;
+                    width: 140px;
                     height: 25px;
                     border-radius: 5px;
                     font-size: 10px;
