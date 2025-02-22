@@ -3,7 +3,7 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 1950px;
+    height: 1550px;
     /* background-color: rgb(194, 192, 192); */
 }
 
@@ -108,7 +108,7 @@ header {
                 background-color: #2877D8;
                 width: 80px;
                 height: 25px;
-                border-radius: 10px;
+                border-radius: 5px;
                 border: 0;
             }
 
@@ -164,9 +164,11 @@ main {
             font-size: 24px;
             z-index: 1000;
             text-align: center;
+
             img {
                 width: 250px;
             }
+
             img:hover {
                 transform: scale(1.1);
                 filter: drop-shadow(0 0 10px #2877D8);
@@ -184,9 +186,11 @@ main {
             font-size: 24px;
             z-index: 1000;
             text-align: center;
+
             img {
                 width: 250px;
             }
+
             img:hover {
                 transform: scale(1.1);
                 filter: drop-shadow(0 0 10px #2877D8);
@@ -289,8 +293,11 @@ main {
         align-items: center;
         flex-direction: column;
         gap: 2rem;
+        background-image: url("/IMGS/fundo_jrm_desc2.png");
+        background-size: 50% 100%;
+        box-shadow: 0 0 80px #2877D8;
         width: 100%;
-        height: 1000px;
+        height: 600px;
         border-bottom: solid 1px rgba(0, 0, 0, 0.3);
 
         .la_p {
@@ -342,6 +349,7 @@ main {
                     border-radius: 5px;
                     border: solid 1px rgba(0, 0, 0, 0.2);
                     box-shadow: 0 0 10px #2877D8;
+                    background-color: white;
 
                     .div1 {
                         display: flex;
@@ -386,7 +394,7 @@ main {
 
                             button {
                                 background-color: #2877D8;
-                                width: 90px;
+                                width: 150px;
                                 height: 30px;
                                 border-radius: 3px;
                                 transition: all 0.3s;
@@ -420,7 +428,7 @@ main {
 
     .jm_descricao3 {
         width: 100%;
-        height: 200px;
+        /* height: 150px; */
 
         .la_p {
             display: flex;
@@ -450,7 +458,7 @@ main {
 
         .marcas {
             width: 100%;
-            height: 100px;
+            height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -580,7 +588,7 @@ footer {
 @media (max-width: 860px) {
     body {
         min-width: 100vw;
-        height: 2900px;
+        height: 3000px;
     }
 
     header {
@@ -678,31 +686,31 @@ footer {
             width: 100%;
             height: 450px;
             overflow: hidden;
-    
-    
+
+
             .carousel-images {
                 display: flex;
                 transition: transform 1s ease-in-out;
                 width: 100%;
                 height: 100%;
             }
-    
+
             .carousel-item {
                 min-width: 100%;
                 height: 100%;
                 position: relative;
             }
-    
+
             .carousel-item img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-    
+
             .carousel-caption {
                 position: absolute;
-                top: 150px;
-                left: 25%;
+                top: 100px;
+                left: 50%;
                 transform: translate(-50%, -50%);
                 background: rgba(#2877D8);
                 color: white;
@@ -710,15 +718,16 @@ footer {
                 font-size: 24px;
                 z-index: 1000;
                 text-align: center;
+
                 img {
-                    width: 70px;
+                    width: 80px;
                 }
             }
-    
+
             .carousel-caption2 {
                 position: absolute;
-                top: 150px;
-                left: 75%;
+                top: 220px;
+                left: 50%;
                 transform: translate(-50%, -50%);
                 background: rgba(#2877D8);
                 color: white;
@@ -726,11 +735,12 @@ footer {
                 font-size: 24px;
                 z-index: 1000;
                 text-align: center;
+
                 img {
-                    width: 70px;
+                    width: 100px;
                 }
             }
-    
+
             .carousel-caption3 {
                 display: flex;
                 justify-content: center;
@@ -747,8 +757,6 @@ footer {
                 padding: 10px;
                 font-size: 24px;
                 z-index: 1000;
-                text-align: center;
-                box-shadow: 0 0 10px black;
             }
         }
 
@@ -798,9 +806,10 @@ footer {
             display: flex;
             align-items: center;
             flex-direction: column;
+            background-size: 300% 100%;
             gap: 2rem;
             width: 100%;
-            height: 1900px;
+            height: 2000px;
 
             .la_p {
                 display: flex;
@@ -810,7 +819,7 @@ footer {
                 width: 100%;
 
                 .la2 {
-                    width: 100%;
+                    width: 300px;
                     height: 25px;
                     border-radius: 5px;
                     font-size: 10px;
@@ -830,7 +839,7 @@ footer {
                 user-select: none;
                 gap: 1.5rem;
                 width: 100%;
-                height: 1300px;
+                height: 1700px;
 
                 .colunas {
                     display: flex;
@@ -882,7 +891,7 @@ footer {
 
 
                                 button {
-                                    width: 90px;
+                                    width: 150px;
                                     height: 30px;
                                     border-radius: 3px;
                                     transition: all 0.3s;
@@ -918,7 +927,7 @@ footer {
                 width: 100%;
 
                 .la2 {
-                    width: 100%;
+                    width: 120px;
                     height: 25px;
                     border-radius: 5px;
                     font-size: 10px;

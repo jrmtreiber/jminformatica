@@ -19,7 +19,7 @@ function moveSlide(direction) {
 
 setInterval(() => {
     showSlide(currentIndex + 1);
-}, 10000);
+}, 5000);
 
 showSlide(currentIndex);
 
