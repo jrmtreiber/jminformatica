@@ -3,7 +3,7 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 800px;
+    height: 1400px;
     /* background-color: rgb(194, 192, 192); */
 }
 
@@ -158,8 +158,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        gap: 2rem;
         width: 100%;
-        height: 600px;
+        height: 1200px;
 
         .site_46garage {
             display: flex;
@@ -175,10 +177,52 @@ main {
             img {
                 width: 800px;
                 box-shadow: 0 0 10px #2877D8;
+                transition: all 0.5s;
+                border-radius: 5px;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px yellow;
             }
 
             h1 {
+                color: yellow;
+                text-align: center;
+            }
+
+            p {
                 color: white;
+                text-align: center;
+            }
+        }
+
+        .site_jrmstore {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            width: 80%;
+            height: 600px;
+            background-color: black;
+            box-shadow: 0 0 50px #2A83ED;
+            border-radius: 10px;
+
+            img {
+                width: 800px;
+                box-shadow: 0 0 10px #a52aed;
+                transition: all 0.5s;
+                border-radius: 5px;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #2A83ED;
+            }
+
+            h1 {
+                color: #2A83ED;
+                text-align: center;
             }
 
             p {
@@ -340,7 +384,7 @@ footer {
 @media (max-width: 860px) {
     body {
         min-width: 100vw;
-        height: 3500px;
+        height: 1350px;
     }
 
     header {
@@ -430,7 +474,120 @@ footer {
 
     /*  */
 
+    main {
+        width: 100%;
+        height: 100%;
 
+        .la_p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+
+            .la2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+                height: 25px;
+                background-color: #2A83ED;
+                border-radius: 5px;
+                color: white;
+                font-size: 14px;
+                transition: all 0.3s;
+            }
+
+            .la2:hover {
+                background-color: #194275;
+                box-shadow: 0 0 5px black;
+            }
+        }
+
+        .p_all_s {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            height: 1200px;
+
+            .site_46garage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 5rem;
+                width: 80%;
+                height: 600px;
+                background-color: black;
+                box-shadow: 0 0 50px #a52aed;
+                border-radius: 10px;
+
+                img {
+                    width: 250px;
+                    box-shadow: 0 0 10px #2877D8;
+                    transition: all 0.5s;
+                    border-radius: 5px;
+                }
+
+                img:active {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 10px yellow;
+                }
+
+                h1 {
+                    color: yellow;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+
+            .site_jrmstore {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 5rem;
+                width: 80%;
+                height: 600px;
+                background-color: black;
+                box-shadow: 0 0 50px #2A83ED;
+                border-radius: 10px;
+
+                img {
+                    width: 250px;
+                    box-shadow: 0 0 10px #a52aed;
+                    transition: all 0.5s;
+                    border-radius: 5px;
+                }
+
+                img:active {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 10px #2A83ED;
+                }
+
+                h1 {
+                    color: #2A83ED;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 
     /*  */
 
