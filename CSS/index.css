@@ -712,6 +712,11 @@ footer {
                     padding: 5px;
                     transition: all 0.3s;
                 }
+
+                .la2:active {
+                    background-color: #194275;
+                    box-shadow: 0 0 5px black;
+                }
             }
 
             .la_p2 {
@@ -814,6 +819,11 @@ footer {
                     font-size: 10px;
                     padding: 5px;
                     transition: all 0.3s;
+                }
+
+                .la2:active {
+                    background-color: #194275;
+                    box-shadow: 0 0 5px black;
                 }
             }
         }
