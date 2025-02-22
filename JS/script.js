@@ -1,4 +1,5 @@
 let currentIndex = 0;
+let intervalId;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
@@ -14,7 +15,15 @@ function showSlide(index) {
 }
 
 function moveSlide(direction) {
+    clearInterval(intervalId);
     showSlide(currentIndex + direction);
+    startAutoSlide();
+}
+
+function startAutoSlide() {
+    intervalId = setInterval(() => {
+        showSlide(currentIndex + 1);
+    }, 5000);
 }
 
 setInterval(() => {
